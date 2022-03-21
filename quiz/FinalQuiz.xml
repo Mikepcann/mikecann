@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE finalquiz SYSTEM "FinalQuiz.dtd" >
+<finalquiz>
+  <question>
+    <qnumber>1</qnumber>
+    <qtitle>In a switch statement, the ________ case clause is used to process exceptional conditions and is usually listed last.</qtitle>
+    <a>break</a>
+    <b>default</b>
+    <c>else</c>
+    <d>then</d>
+  </question>
+  <question>
+    <qnumber>2</qnumber>
+    <qtitle>The technique of developing and maintaining a large program by constructing it from small, simple pieces is called ________.</qtitle>
+    <a>divide and conquer</a>
+    <b>modular programming</b>
+    <c>multitasking</c>
+    <d>multiprogramming</d>
+  </question>
+  <question>
+    <qnumber>3</qnumber>
+    <qtitle>All variables declared in function definitions are ________.</qtitle>
+    <a>global variables</a>
+    <b>static variables</b>
+    <c>constant variables</c>
+    <d>local variables</d>
+  </question>
+  <question>
+    <qnumber>4</qnumber>
+    <qtitle>A function’s ________ are also considered to be local variables.</qtitle>
+    <a>parameters</a>
+    <b>static variables</b>
+    <c>register variables</c>
+    <d>constant variables</d>
+  </question>
+  <question>
+    <qnumber>5</qnumber>
+    <qtitle>The style of programming in which the user interacts with a GUI component is called ________ programming. </qtitle>
+    <a>modular</a>
+    <b>automatic</b>
+    <c>event driven</c>
+    <d>object oriented</d>
+  </question>
+  <rightanswers>b,a,d,a,c</rightanswers>
+</finalquiz>

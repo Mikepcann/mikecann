@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./homepageStyle.css">
+    <title>Dodgey Brakes Car Rental</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Dodgy Brakes Car Rental</h1>
+        </div>
+        <div class="subtitle">
+            <h3>Welcome to Dodgy Breaks Car Rental!</h3>
+            <p>We have been working tirelessly to reduce the number of accidents to our customers due to malfunctioning brakes. We thank all of our new and returning customers with open arms and a new accessability ramp into our buildings. PLease take advantage
+                of our great deals!</p>
+        </div>
+        <div class="displayTime">
+            <p>Current Time: </p>
+            <p class="currentTime"></p>
+        </div>
+        <div id="rentCar">
+            <a class="rentCar" href="./rental.html ">Rent A Car!</a>
+        </div>
+        <div class="foot">
+            <pre>
+                2080 Diamond Street Asheville
+                North Carolina
+                28801
+                Office: 828-545-1465
+                Fax: 828-300-0956</pre>
+        </div>
+    </div>
+    <script>
+        // Script used to display the current time 
+        const displayTime = document.querySelector('.currentTime');
+        const display = (date = new Date()) => {
+            let ampm = (date.getHours() >= 12) ? 'pm' : 'am';
+            let localHr = (date.getHours() <= 12) ? date.getHours() : date.getHours() - 12;
+            let weekday = '';
+            switch (date.getDay()) {
+                case 0:
+                    weekday = 'Sunday'
+                    break;
+                case 1:
+                    weekday = 'Monday';
+                case 2:
+                    weekday = 'Tuesday';
+                    break;
+                case 3:
+                    weekday = 'Wednesday';
+                    break;
+                case 4:
+                    weekday = 'Thursday';
+                    break;
+                case 5:
+                    weekday = 'Friday';
+                    break;
+                case 6:
+                    weekday = 'Saturday';
+                    break;
+                default:
+                    console.error('There was an error in the Day!');
+                    break;
+            }
+            let month = '';
+            switch (date.getMonth()) {
+                case 0:
+                    month = 'January'
+                    break;
+                case 1:
+                    month = 'Febuary';
+                case 2:
+                    month = 'March';
+                    break;
+                case 3:
+                    month = 'April';
+                    break;
+                case 4:
+                    month = 'May';
+                    break;
+                case 5:
+                    month = 'June';
+                    break;
+                case 6:
+                    month = 'July';
+                    break;
+                case 7:
+                    month = 'August';
+                    break;
+                case 8:
+                    month = 'September';
+                    break;
+                case 9:
+                    month = 'October';
+                    break;
+                case 10:
+                    month = 'November';
+                    break;
+                case 11:
+                    month = 'December';
+                    break;
+                default:
+                    console.error('There was an error in the Month!');
+                    break;
+            }
+
+            let formatTime = `${weekday}, ${month} ${date.getDate()} ${localHr}:${date.getMinutes()}:${date.getSeconds()} ${ampm}`
+            displayTime.innerHTML =
+                formatTime;
+        }
+        setInterval(display, 1000);
+    </script>
+</body>
+
+</html>

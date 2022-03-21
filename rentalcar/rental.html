@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Car Rental</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="d-flex justify-content-center">Rental Form</h1>
+            <div class="row">
+                <div class="col searchName">
+                    <h3>Search By Name</h3>
+                    <div class="row mb-3">
+                        <label for="lastNameSearch" class="col-form-label">Last Name:</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="lastNameSearch">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Select Name</h4>
+                    <div id="resultBox">
+                        <ul id="resultList">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center rentalForm">
+            <h3>Rental Form</h3>
+            <div class="row">
+                <div class="card">
+                    <!-- https://www.jdpower.com/cars/ratings/quality/2020/top-rated-2020-small-cars-in-quality-according-to-consumers -->
+                    <img src="./img/compact.jpg" class="card-img-top" alt="2020 Honda Fit">
+                    <div class="card-body">
+                        <h5 class="card-title">Compact</h5>
+                        <p class="card-text">Enjoy the super reliable 2020 Honda Fit. Great on gas and for when you
+                            don't to worry about transporting large amouts of luggage.</p>
+                        <p>$15/Day</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="carType" value="Compact 15"
+                                id="compactSelector" disabled>
+                            <label class="form-check-label" for="compact">
+                                Compact
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <!-- https://www.jdpower.com/cars/sedans/10-most-popular-midsize-cars -->
+                    <img src="./img/midsized.jpg" class="card-img-top" alt="Mazda 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Mid-Sized</h5>
+                        <p class="card-text">Enjoy the trendy Mazda 6 for your trip. More room and a smooth ride to
+                            get you where you are going in a little more style.</p>
+                        <p>$20/Day</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="carType" value="Mid-Sized 20"
+                                id="midSizedtSelector" disabled>
+                            <label class="form-check-label" for="midSized">
+                                Mid-Sized</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <!-- https://www.extremetech.com/extreme/272595-which-jd-power-study-should-you-trust-the-most -->
+                    <img src="./img/luxury.jpg" class="card-img-top" alt="Genesis G90">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury</h5>
+                        <p class="card-text">When luxury is your priority, there is no better choice than the
+                            Genesis G90. It's drives and smooth as it looks!</p>
+                        <p>$35/Day</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="carType" value="Luxury 35"
+                                id="luxurySelector" disabled>
+                            <label class="form-check-label" for="luxury">
+                                Luxury
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <!-- https://www.f150online.com/articles/ford-e-series-van-truck-makes-converts-out-of-us/ -->
+                    <img src="./img/vanTruck.jpg" class="card-img-top" alt="Ford E-Series Truck Conversion">
+                    <div class="card-body">
+                        <h5 class="card-title">Van/Truck</h5>
+                        <p class="card-text">Never have to choose between a Truck or Van again with the stylish Ford
+                            E-Series Truck Conversion.</p>
+                        <p>$40/Day</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="carType" value="Van/Truck 40"
+                                id="vanTruckSelector" disabled>
+                            <label class="form-check-label" for="vanTruck">
+                                Van/Truck
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="options">
+                <h4>Rental Options</h4>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Roof Rack or Bicycle Rack" id="roofRack"
+                        disabled>
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Roof Rack or Bicycle Rack extra $5/day
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="GPS" id="GPS" disabled>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        GPS extra $10 (lump sum)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Child Seat" id="childSeat" disabled>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Child Seat free
+                    </label>
+                </div>
+            </div>
+            <div class="rentalLength">
+                <h4>Rental Length (1-30 Days)</h4>
+                <label for="customRange3" class="form-label">Rental Days</label> <span class="rentalDayDisplay">1</span>
+                <input type="range" class="form-range" min="1" max="30" step="1" value="1" id="rentalDayValue" disabled>
+            </div>
+            <div class="finalizeOrder row">
+                <button type="button" class="btn btn-primary" id='finishOrder' onclick="finishOrder()" disabled>Finish
+                    Rental</button>
+            </div>
+            <div class="order">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="carRental.js"></script>

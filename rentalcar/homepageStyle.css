@@ -1,0 +1,103 @@
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    color: var(--main-bg-color);
+    font-weight: 500;
+}
+
+:root {
+    --main-bg-color: rgb(73, 75, 77);
+    --secondary-bg-color: rgba(10, 172, 172, 0.9);
+}
+
+
+/* https://unsplash.com/s/photos/mount */
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 15fr 30fr 10fr;
+    grid-template-rows: 200px auto 200px auto 200px;
+    text-align: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas: "a a a" "x b z" "d d d" "c c c" "foot foot foot";
+    background-image: url('./img/y-s-T5WRME-9lBk-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+.title {
+    border-bottom: 4px solid darkcyan;
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-bg-color);
+}
+
+.subtitle {
+    background-color: rgb(10, 172, 172);
+    grid-area: b;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.displayTime {
+    display: flex;
+    font-size: 24px;
+    grid-area: x;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#rentCar {
+    grid-area: d;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--main-bg-color);
+    display: flex;
+    width: 200px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--secondary-bg-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.foot {
+    grid-area: foot;
+    background-color: var(--secondary-bg-color);
+    border-top: 4px solid darkcyan;
+    text-align: center;
+    font-size: larger;
+    font-weight: 700;
+}

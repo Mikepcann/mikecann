@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Learn About Calgary</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Calgary Data Sets</h1>
+            <p>Learn About your city</p>
+        </div>
+
+        <div class="row">
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Short Term Rentals</h2>
+                        <p>This dataset shows all licenced Short Term Rental locations in the City of Calgary and its
+                            status. Data is provided daily by The City of Calgary.</p>
+                        <div class="searchL">
+                            <h5>Search By</h5>
+                            <ul>
+                                <li>Address</li>
+                                <li>Business Licence Number</li>
+                                <li>Licence Type</li>
+                                <li>Type Of Residence</li>
+                            </ul>
+                        </div>
+                        <button id="shortTermRentalDisplay" type="button" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Secondary Suites</h2>
+                        <p>This dataset contains information about approved secondary suites in The City of Calgary. It
+                            can be viewed on an interactive map at http://secondarysuites.calgary.ca/ Dates for suites
+                            approved and completed prior to 2008 are set
+                            to Jan 1, 2008.</p>
+                        <div class="searchL">
+                            <h5>Search By</h5>
+                            <ul>
+                                <li>Address</li>
+                                <li>Community</li>
+                                <li>Sticker Number</li>
+                                <li>Ward</li>
+                            </ul>
+                        </div>
+                        <button id="secondarySuiteDisplay" type="button" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Community Crime Stats</h2>
+                        <p>Data is provided monthly by the Calgary Police Service. This data is considered cumulative as
+                            late-reported incidents are often received well after an offence has occurred.</p>
+                        <div class="searchL">
+                            <h5>Search By</h5>
+                            <ul>
+                                <li>Category</li>
+                                <li>Community</li>
+                                <li>Sector</li>
+                                <li>Year</li>
+                            </ul>
+                        </div>
+                        <button id="communityCrimeDisplay" type="button" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Public Art</h2>
+                        <p>Information about artworks in The City of Calgary Public Art Collection, including locations,
+                            titles, artists, and descriptions of the artwork.</p>
+                        <h5>Search By</h5>
+                        <div class="searchL">
+                            <ul>
+                                <li>Address</li>
+                                <li>Artist</li>
+                                <li>Tab Name</li>
+                                <li>Title</li>
+                            </ul>
+                        </div>
+                        <button id="publicArtDisplay" type="button" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="searchForm"></div>
+        <div id="displayResults">
+            <table id="displayTable" class="table"></table>
+        </div>
+
+        <script src=" ./datasetScript.js "></script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('./img/nataliia-kvitovska-LOnSXGEfCF0-unsplash.jpg');
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* https://unsplash.com/photos/LOnSXGEfCF0 */
+
+.container {
+    margin-top: 0px;
+    color: rgb(50, 24, 68);
+    font-size: larger;
+}
+
+.header {
+    background-color: rgba(233, 236, 230, .9);
+    padding: 20px 50px;
+    width: 100%;
+    color: rgb(50, 24, 68);
+    margin-bottom: 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+thead td {
+    font-weight: bold;
+}
+
+tr {
+    transition: all .3s ease-in-out;
+}
+
+tr:hover {
+    background-color: aliceblue;
+    font-size: 1.1em;
+    font-weight: 500;
+    border-radius: 35px 15px;
+    transition: all .3s ease-in-out;
+}
+
+.card {
+    background-color: rgba(233, 236, 230, .9);
+    padding: 15px;
+    border-radius: 35px 15px;
+    margin: 10px;
+}
+
+.searchL {
+    float: right;
+    width: 40%;
+}
+
+#searchForm {
+    background-color: rgba(233, 236, 230, .9);
+    padding: 25px;
+    border-radius: 35px 15px;
+    margin: 10px;
+    display: none;
+}
+
+#displayResults {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+table {
+    border-radius: 35px 15px;
+    background-color: rgba(233, 236, 230, .9);
+    padding: 25px;
+}

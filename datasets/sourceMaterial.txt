@@ -1,0 +1,128 @@
+Short Term Rentals
+https://data.calgary.ca/Business-and-Economic-Activity/Short-Term-Rentals/gzkz-5k9a
+
+API
+https://data.calgary.ca/resource/gzkz-5k9a.json
+ 
+*******SAMPLE DATA**********
+{
+"business_licence_number": "BL231745",
+"business_id": "15875958",
+"address": "7508 7 ST SW",
+"business_licence_type": "SHORT TERM RENTAL - TIER TWO",
+"type_of_residence": "Single/detached house",
+"licenced_date": "2020-09-11T14:10:02.000",
+"licenced_expiry_date": "2021-09-11T14:10:02.000",
+"status_description": "Licensed",
+"longitude": "-114.0811517255954",
+"latitude": "50.98697715894135",
+"point": {
+"type": "Point",
+"coordinates": [
+-114.081151725595,
+50.986977158941
+]
+},
+":@computed_region_4b54_tmc4": "8",
+":@computed_region_4a3i_ccfj": "1",
+":@computed_region_kxmf_bzkv": "120",
+":@computed_region_p8tp_5dkv": "5"
+},
+
+*********************************************************
+*********************************************************
+*********************************************************
+
+Secondary suites
+https://data.calgary.ca/Business-and-Economic-Activity/Secondary-Suites/jwn6-r58y
+
+API
+https://data.calgary.ca/resource/jwn6-r58y.json
+*******SAMPLE DATA**********
+{
+"id": "1294",
+"address": "1635 6A ST NW",
+"buildingaddress": "1635 6A ST NW",
+"community": "ROSEDALE",
+"completiondate": "2020-05-11T00:00:00.000",
+"inspectiondate": "2020-05-08T00:00:00.000",
+"permitnumber": "BP2019-07669",
+"stickernumber": "3313",
+"ward": "7",
+"longitude": "-114.077512906459",
+"latitude": "51.0666300230164",
+"point": {
+"type": "Point",
+"coordinates": [
+-114.077512906459,
+51.066630023016
+]
+},
+":@computed_region_kxmf_bzkv": "219",
+":@computed_region_4b54_tmc4": "7"
+},
+
+*********************************************************
+*********************************************************
+*********************************************************
+Community Crime Stats
+
+https://data.calgary.ca/Health-and-Safety/Community-Crime-Statistics/78gh-n26t
+
+API
+https://data.calgary.ca/resource/78gh-n26t.json
+*******SAMPLE DATA**********
+{
+"sector": "NORTHWEST",
+"community_name": "02E",
+"category": "Violence Other (Non-domestic)",
+"crime_count": "2",
+"resident_count": "0",
+"date": "2020-04-01T00:00:00.000",
+"year": "2020",
+"month": "APR",
+"long": "-114.19936202052554",
+"lat": "51.1614306187993",
+"id": "2020-APR-02E-Violence Other (Non-domestic)",
+"community_center_point": {
+"type": "Point",
+"coordinates": [
+-114.199362020526,
+51.161430618799
+]
+},
+":@computed_region_4a3i_ccfj": "2",
+":@computed_region_kxmf_bzkv": "204",
+":@computed_region_p8tp_5dkv": "10",
+":@computed_region_4b54_tmc4": "3"
+},
+
+*********************************************************
+*********************************************************
+*********************************************************
+Public Art
+https://data.calgary.ca/Recreation-and-Culture/Public-Art/2kp2-hsy7
+
+API
+https://data.calgary.ca/resource/2kp2-hsy7.json
+
+*******SAMPLE DATA**********
+{
+"art_id": "P2013.002.001",
+"tab_name": "Downtown",
+"title": "Luminous Crossings",
+"artist": "Cliff Garten",
+"address": "City Hall LRT Station (Third St. S.E.)",
+"short_desc": "This interactive public art installation consists of 20 components: two large-scale vertical sculptures, plus three hanging works, on four stations located at either end of the Seventh Avenue LRT line.",
+"desc1": "Referencing the idea of the living room or waiting area, there are four chandelier-like hanging sculptures in each canopy of the east and west gateway stations that give the waiting areas of the platforms a different quality. Additionally, their changing light show is a pleasant surrounding while waiting for the train.",
+"website": "https://www.calgary.ca/CSPS/Recreation/Pages/Public-Art/Downtown-Gateway-LRT-Stations.aspx",
+"longitude": "-114.056673544737",
+"latitude": "51.0462987504574",
+"location": {
+"latitude": "51.046298750457",
+"longitude": "-114.056673544737"
+},
+":@computed_region_4a3i_ccfj": "3",
+":@computed_region_4b54_tmc4": "7",
+":@computed_region_kxmf_bzkv": "262"
+},

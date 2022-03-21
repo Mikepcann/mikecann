@@ -1,0 +1,62 @@
+body {
+    background-color: aliceblue;
+}
+
+#title {
+    text-align: center;
+    padding: 30px;
+    margin: 15vh 0vw 0vh;
+    width: 100%;
+}
+
+.shape {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+}
+
+
+/* https://unsplash.com/s/photos/exam */
+
+.left {
+    display: inline-block;
+    border: 4px solid darkslategrey;
+    height: 125px;
+    width: 100%;
+    background-image: url('./img/chris-liverani-ViEBSoZH6M4-unsplash.jpg');
+    background-size: cover;
+    border-radius: 30px 30px 30px 30px;
+    margin-bottom: 40px;
+}
+
+#displayResults {
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#displayResults button {
+    padding: 20px;
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+label,
+p {
+    font-size: 20px;
+    color: steelblue;
+    font-weight: 500;
+}
+
+h4 {
+    color: darkslategrey;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid darkslategray;
+}
