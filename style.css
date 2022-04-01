@@ -8,23 +8,23 @@ body {
 .container {
     color: azure;
 }
-.messageBlock{  
+.messageBlock {  
     
     margin-top: 10vh;
     padding: 5vh 0 5vh;
     font-size: 100px;
 }
-.logo{
+.logo {
     width: 75px;
     height: 75px;
 }
-p{
+p {
     font-size: 1.25em;
 }
-.external-links{
+.external-links {
     padding-left: 200px;
 }
-iframe{
+iframe {
     height: 35vh;
     width: 45vw;
     padding: 10px;
@@ -33,7 +33,6 @@ a h4 {
     color: azure;
     
 }
-
 h4  {
     text-decoration: none;
 }
